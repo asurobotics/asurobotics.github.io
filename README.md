@@ -26,13 +26,17 @@ Launch the builder container:
 docker-compose up
 ```
 
+```bash
 docker exec -it jekyll /bin/bash
-
+```
 
 ```bash
 bundle install
 bundle exec jekyll build
+#or
+bundle exec jekyll serve -H 0.0.0.0
 ```
+
 The compiled website will be saved into the `_site/` folder.
 
 Preview your compiled website at: `http://localhost`
