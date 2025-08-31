@@ -1,7 +1,8 @@
 version: '2.1'
 
 services:
-  site:
+  jekyll:
+    container_name: jekyll
     image: jekyll/builder
     command: bash -c "sleep infinity"
     volumes:

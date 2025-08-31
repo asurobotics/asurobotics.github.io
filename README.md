@@ -22,9 +22,18 @@ Make sure you have a recent version of Docker CE installed on your computer, inc
 
 Launch the builder container:
 
-````
+```bash
 docker-compose up
-````
+```
+
+```bash
+docker exec -it jekyll /bin/bash
+```
+
+```bash
+bundle install
+bundle exec jekyll build
+```
 
 The compiled website will be saved into the `_site/` folder.
 
