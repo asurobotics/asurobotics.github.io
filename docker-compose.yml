@@ -1,14 +1,9 @@
 services:
   jekyll:
     container_name: jekyll
-    image: jekyll/builder
-    # command: bash -c "bundle install && bundle exec jekyll build"
-    command: bash -c "bundle install && bundle exec jekyll build && sleep infinity"
-    # command: bash -c "sleep infinity"
+    build: _docker
+    command: bash -c "cp /work/* /srv/jekyll && bundle exec jekyll build"
     volumes:
       - ./:/srv/jekyll
     ports:
       -  4000:4000
-#      - 35729:35729
-#      -  3000:3000
-#      -    80:4000
