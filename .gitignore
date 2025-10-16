@@ -1,5 +1,4 @@
-_site
-
+_site/*
 /assets/bootstrap/grunt
 /assets/bootstrap/less
 /assets/jquery/src
